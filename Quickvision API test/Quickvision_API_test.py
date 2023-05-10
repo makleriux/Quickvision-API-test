@@ -3,10 +3,14 @@ import subprocess # lets execute programs
 import winreg as wrg #find Quicvision location for API 
 import time # Giggless
 import sys; 
-# if (sys.maxsize > 2**32) is True {
+
+#os_max_bit = sys.maxsize > 2**32 # check if its x64 or x32
+# if (os_max_bit) is True {
 #addr = "SOFTWARE\\WOW6432Node\\Owandy\\QuickVision\\" 
+#ostyp = "x64"
 #}
 #else
+#ostyp = "x32"
 #addr = "SOFTWARE\\Owandy\\QuickVision\\"
 
 # Store location of HKEY_CURRENT_USER
@@ -26,6 +30,8 @@ if soft:
     wrg.CloseKey(soft)
   
 # Printing values
+print("OS type is: " + ostyp)
+print("Registry pointers for API location: "+ location+soft)
 hm = "QuickVision instalation location is: "
 print(hm + adresas[0])
 print("Opening QuickVision in 5 seconds")
