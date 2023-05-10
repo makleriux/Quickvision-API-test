@@ -2,12 +2,18 @@
 import subprocess # lets execute programs
 import winreg as wrg #find Quicvision location for API 
 import time # Giggless
-  
+import sys; 
+# if (sys.maxsize > 2**32) is True {
+#addr = "SOFTWARE\\WOW6432Node\\Owandy\\QuickVision\\" 
+#}
+#else
+#addr = "SOFTWARE\\Owandy\\QuickVision\\"
+
 # Store location of HKEY_CURRENT_USER
 location = wrg.HKEY_LOCAL_MACHINE\
   
 # Storing path within HKEY
-soft = wrg.OpenKeyEx(location,r"SOFTWARE\\WOW6432Node\\Owandy\\QuickVision\\")
+soft = wrg.OpenKeyEx(location,raddr)
   
 #for long therm testing consider to use TRY as QV is 32bit and on ^$bit machines 6432 node is added to the reg path
 # try would find correct path or prompt QV is not installed/reg pointers not found :)
