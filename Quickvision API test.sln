@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Quickvision API test", "Quickvision API test\Quickvision API test.pyproj", "{DDC51851-8B2E-41F3-8522-5AD1A5A64DB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDC51851-8B2E-41F3-8522-5AD1A5A64DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC51851-8B2E-41F3-8522-5AD1A5A64DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8438CC5-6469-499A-AC17-27AB31D22789}
+	EndGlobalSection
+EndGlobal
